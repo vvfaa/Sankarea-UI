@@ -1,6 +1,6 @@
 -- Sankarea.UI – Xenon Fade Edition
 -- Built by Sankarea.gg (based on 666mirp Fluent foundation)
-
+warn("[Sankarea] main.lua loaded")
 -- ========== Services ==========
 local TweenService = game:GetService("TweenService")
 local CoreGui = game:GetService("CoreGui")
@@ -58,7 +58,7 @@ function Sankarea:CreateWindow(cfg)
 	cfg = cfg or {}
 	local ScreenGui = Instance.new("ScreenGui")
 	ScreenGui.Name = "SankareaUI"
-	ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.Parent = gethui() or CoreGui
 	ScreenGui.IgnoreGuiInset = true
 	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
@@ -341,6 +341,18 @@ _G.__SANKAREA_NOTIFY({
     Content = "Loaded successfully 💜",
     Duration = 3
 })
+
+pcall(function()
+    local UI = Sankarea:CreateWindow()
+    UI:InitDefaultTabs()
+    _G.__SANKAREA_NOTIFY({
+        Title = "Sankarea UI",
+        Content = "Loaded successfully 💜",
+        Duration = 3
+    })
+end)
+
+
 
 
 
