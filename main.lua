@@ -121,7 +121,13 @@ local aa = {
             Window = nil,
             WindowFrame = nil,
             Unloaded = false,
-            Theme = "Dark",
+            Theme = "XenryDarkBlue",
+            if not Fluent.Themes["XenryDarkBlue"] then
+    warn("[Sankarea-UI] Theme XenryDarkBlue not found, falling back to Dark")
+    Fluent:SetTheme("Dark")
+else
+    Fluent:SetTheme("XenryDarkBlue")
+end
             DialogOpen = false,
             UseAcrylic = false,
             Acrylic = false,
@@ -5544,3 +5550,4 @@ do
         end
     end
 end
+
