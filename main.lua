@@ -83,6 +83,14 @@ function Sankarea:CreateWindow(cfg)
 	Header.TextColor3 = Theme.Accent
 	Header.Parent = MainFrame
 
+	local divider = Instance.new("Frame")
+divider.Size = UDim2.new(1, 0, 0, 1)
+divider.Position = UDim2.new(0, 0, 0, 38)
+divider.BackgroundColor3 = Theme.Sidebar
+divider.BorderSizePixel = 0
+divider.BackgroundTransparency = 0.3
+divider.Parent = MainFrame
+
 	-- underline glow
 	local line = Instance.new("Frame")
 	line.Size = UDim2.new(1, -20, 0, 1)
@@ -110,8 +118,8 @@ function Sankarea:AddTab(tabData)
 		Sidebar.Parent = self._root
 		Sidebar.BackgroundColor3 = Theme.Sidebar
 		Sidebar.BorderSizePixel = 0
-		Sidebar.Size = UDim2.new(0, 160, 1, -38)
-		Sidebar.Position = UDim2.new(0, 0, 0, 38)
+        Sidebar.Size = UDim2.new(0, 160, 1, -46)
+        Sidebar.Position = UDim2.new(0, 0, 0, 46)
 	end
 
 	local Button = Instance.new("TextButton")
@@ -351,6 +359,7 @@ pcall(function()
         Duration = 3
     })
 end)
+
 
 
 
