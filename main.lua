@@ -15,7 +15,6 @@ local a, b = {
                     {52, "ModuleScript", {"Light"}},
                     {51, "ModuleScript", {"Darker"}},
                     {53, "ModuleScript", {"Rose"}},
-                    {54, "ModuleScript", {"XenryDarkBlue"}},
                     {49, "ModuleScript", {"Aqua"}},
                     {48, "ModuleScript", {"Amethyst"}}
                 }
@@ -5056,7 +5055,7 @@ local aa = {
     end,
     [47] = function()
         local aa, ab, ac, ad, ae = b(47)
-        local af = {Names = {"Dark", "Darker", "Light", "Aqua", "Amethyst", "Rose", "XenryDarkBlue"}}
+        local af = {Names = {"Dark", "Darker", "Light", "Aqua", "Amethyst", "Rose"}}
         for ag, ah in next, ab:GetChildren() do
             local aj = ac(ah)
             af[aj.Name] = aj
@@ -5249,49 +5248,7 @@ local aa = {
             SubText = Color3.fromRGB(40, 40, 40),
             Hover = Color3.fromRGB(50, 50, 50),
             HoverChange = 0.16
-}
-    end,
-    [54] = function()
-        local aa, ab, ac, ad, ae = b(54)
-        return {
-	       Name = "XenryDarkBlue",
-	       Accent = Color3.fromRGB(90, 180, 255), -- ฟ้าสว่างตรง toggle
-	       AcrylicMain = Color3.fromRGB(22, 25, 35), -- พื้นหลังหลักเข้มอมฟ้า
-	       AcrylicBorder = Color3.fromRGB(35, 40, 55), -- ขอบข้างใน
-	       AcrylicGradient = ColorSequence.new(
-	       Color3.fromRGB(28, 32, 45),
-		   Color3.fromRGB(22, 25, 35)
-	       AcrylicNoise = 0.85,
-	       TitleBarLine = Color3.fromRGB(50, 55, 70), -- เส้นใต้หัวข้อ
-	       Tab = Color3.fromRGB(100, 105, 120),
-	       Element = Color3.fromRGB(38, 42, 55), -- กล่อง toggle / slider
-	       ElementBorder = Color3.fromRGB(25, 28, 38),
-	       InElementBorder = Color3.fromRGB(55, 60, 75),
-	       ElementTransparency = 0.92,
-	       ToggleSlider = Color3.fromRGB(50, 55, 70),
-	       ToggleToggled = Color3.fromRGB(90, 180, 255), -- ฟ้าสว่างตอนเปิด
-	       SliderRail = Color3.fromRGB(55, 60, 75),
-	       DropdownFrame = Color3.fromRGB(45, 50, 65),
-	       DropdownHolder = Color3.fromRGB(28, 30, 40),
-	       DropdownBorder = Color3.fromRGB(35, 40, 55),
-	       DropdownOption = Color3.fromRGB(100, 105, 120),
-	       Keybind = Color3.fromRGB(45, 50, 65),
-	       Input = Color3.fromRGB(60, 65, 80),
-	       InputFocused = Color3.fromRGB(20, 25, 35),
-	       InputIndicator = Color3.fromRGB(120, 130, 150),
-	       Dialog = Color3.fromRGB(28, 30, 42),
-	       DialogHolder = Color3.fromRGB(22, 25, 35),
-	       DialogHolderLine = Color3.fromRGB(30, 35, 50),
-	       DialogButton = Color3.fromRGB(38, 42, 55),
-	       DialogButtonBorder = Color3.fromRGB(65, 70, 85),
-     	   DialogBorder = Color3.fromRGB(60, 65, 80),
-           DialogInput = Color3.fromRGB(35, 40, 55),
-	       DialogInputLine = Color3.fromRGB(90, 180, 255),
-	       Text = Color3.fromRGB(235, 240, 250), -- ตัวอักษรหลัก
-	       SubText = Color3.fromRGB(165, 175, 190), -- ตัวอักษรรอง
-	       Hover = Color3.fromRGB(70, 75, 90),
-	       HoverChange = 0.08,
-}
+        }
     end,
     [53] = function()
         local aa, ab, ac, ad, ae = b(53)
@@ -5586,5 +5543,3 @@ do
         end
     end
 end
-
-
