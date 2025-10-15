@@ -6,9 +6,9 @@ local TweenService = game:GetService("TweenService")
 local CoreGui = game:GetService("CoreGui")
 
 -- Imports
-local Theme = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sankarea/UI/main/Themes/Xenon.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sankarea/UI/main/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sankarea/UI/main/Addons/InterfaceManager.lua"))()
+local Theme = loadstring(game:HttpGet("https://raw.githubusercontent.com/vvfaa/Sankarea-UI/main/Themes/Xenon.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/vvfaa/Sankarea-UI/main/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/vvfaa/Sankarea-UI/main/Addons/InterfaceManager.lua"))()
 
 -- ================== Core UI ==================
 local Sankarea = {}
@@ -185,3 +185,4 @@ SaveManager:BuildConfigSection(Settings)
 SaveManager:LoadAutoloadConfig()
 
 return Sankarea
+
