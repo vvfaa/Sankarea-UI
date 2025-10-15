@@ -5249,7 +5249,7 @@ local aa = {
             SubText = Color3.fromRGB(40, 40, 40),
             Hover = Color3.fromRGB(50, 50, 50),
             HoverChange = 0.16
-        }
+}
     end,
     [54] = function()
         local aa, ab, ac, ad, ae = b(54)
@@ -5586,4 +5586,5 @@ do
         end
     end
 end
+
 
