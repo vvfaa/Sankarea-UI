@@ -328,4 +328,19 @@ function Sankarea:AddSlider(tabTitle, data)
 	end)
 end
 
+-- ========== Run Sankarea UI ==========
+local UI = Sankarea:CreateWindow()
+UI:InitDefaultTabs()
+
+-- ตัวอย่างเพิ่มปุ่ม/สไลเดอร์
+UI:AddToggle("Main", { Title = "Auto Stars", Default = true })
+UI:AddSlider("Main", { Title = "Star CPS", Min = 1, Max = 10, Default = 5 })
+
+_G.__SANKAREA_NOTIFY({
+    Title = "Sankarea UI",
+    Content = "Loaded successfully 💜",
+    Duration = 3
+})
+
+
 
