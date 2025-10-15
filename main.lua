@@ -16,8 +16,7 @@ local a, b = {
                     {51, "ModuleScript", {"Darker"}},
                     {53, "ModuleScript", {"Rose"}},
                     {49, "ModuleScript", {"Aqua"}},
-                    {48, "ModuleScript", {"Amethyst"}},
-                    {54, "ModuleScript", {"XenryDarkBlue"}}
+                    {48, "ModuleScript", {"Amethyst"}}
                 }
             },
             {
@@ -121,13 +120,7 @@ local aa = {
             Window = nil,
             WindowFrame = nil,
             Unloaded = false,
-            Theme = "XenryDarkBlue",
-            if not Fluent.Themes["XenryDarkBlue"] then
-    warn("[Sankarea-UI] Theme XenryDarkBlue not found, falling back to Dark")
-    Fluent:SetTheme("Dark")
-else
-    Fluent:SetTheme("XenryDarkBlue")
-end
+            Theme = "Dark",
             DialogOpen = false,
             UseAcrylic = false,
             Acrylic = false,
@@ -5062,7 +5055,7 @@ end
     end,
     [47] = function()
         local aa, ab, ac, ad, ae = b(47)
-        local af = {Names = {"Dark", "Darker", "Light", "Aqua", "Amethyst", "Rose", "XenryDarkBlue"}}
+        local af = {Names = {"Dark", "Darker", "Light", "Aqua", "Amethyst", "Rose"}}
         for ag, ah in next, ab:GetChildren() do
             local aj = ac(ah)
             af[aj.Name] = aj
@@ -5550,6 +5543,3 @@ do
         end
     end
 end
-return Fluent
-
-
