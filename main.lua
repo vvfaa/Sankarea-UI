@@ -58,7 +58,7 @@ function Sankarea:CreateWindow(cfg)
 	cfg = cfg or {}
 	local ScreenGui = Instance.new("ScreenGui")
 	ScreenGui.Name = "SankareaUI"
-	ScreenGui.Parent = CoreGui
+	ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 	ScreenGui.IgnoreGuiInset = true
 	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
@@ -327,3 +327,4 @@ function Sankarea:AddSlider(tabTitle, data)
 		end
 	end)
 end
+
