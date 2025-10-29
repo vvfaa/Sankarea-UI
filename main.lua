@@ -2257,6 +2257,7 @@ Components.Tab = (function()
 			BorderSizePixel = 0,
 			CanvasSize = UDim2.fromScale(0, 0),
 			ScrollingDirection = Enum.ScrollingDirection.Y,
+			ScrollingEnabled = true,
 		}, {
 			ContainerLayout,
 			New("UIPadding", {
@@ -3187,6 +3188,7 @@ Components.Window = (function()
 			BorderSizePixel = 0,
 			CanvasSize = UDim2.fromScale(0, 0),
 			ScrollingDirection = Enum.ScrollingDirection.Y,
+			ScrollingEnabled = true,
 		}, {
 			New("UIListLayout", {
 				Padding = UDim.new(0, 4),
@@ -4037,6 +4039,7 @@ ElementsTable.Dropdown = (function()
 			CanvasSize = UDim2.fromScale(0, 0),
 			AutomaticCanvasSize = Enum.AutomaticSize.Y,
 			ScrollingDirection = Enum.ScrollingDirection.Y,
+			ScrollingEnabled = true,
 		}, {
 			DropdownListLayout,
 		})
@@ -4274,7 +4277,7 @@ ElementsTable.Dropdown = (function()
 
 		function Dropdown:Close()
 			Dropdown.Opened = false
-			ScrollFrame.ScrollingEnabled = false
+			ScrollFrame.ScrollingEnabled = true
 			DropdownHolderFrame.Size = UDim2.fromScale(1, 0.6)
 			DropdownHolderCanvas.Visible = false
 			TweenService:Create(
